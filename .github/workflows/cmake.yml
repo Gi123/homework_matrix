@@ -1,4 +1,4 @@
-name: 'Sparse Matrix'
+name: 'Matrix'
 
 on:
   push:
@@ -50,6 +50,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./homework_matrix-0.0.${{ github.run_number }}-Linux.deb
-          asset_name: homework_matrix-0.0.${{ github.run_number }}-Linux.deb
+          asset_path: ./homework_matrix
+          asset_name: homework_matrix
           asset_content_type: application/vnd.debian.binary-package
